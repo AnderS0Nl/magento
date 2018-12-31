@@ -1,16 +1,11 @@
 <?php
 
-$className = new TSG_Trial_Block_Advertising();
-$result = $className->isAdvertising();
-
-
-if($result): ?>
-<img src="<?php echo $this->getSkinUrl('images/1Advertising.jpg') ?>"/>
+if($this->isAdvertising()): ?>
+<img src="<?php echo $this->getSkinUrl('images/myAdvertising.jpg') ?>"/>
 <?php else :
     echo '<h2>Advertising is absent</h2>';
     ?>
 <?php endif; ?>
-
 
 
 

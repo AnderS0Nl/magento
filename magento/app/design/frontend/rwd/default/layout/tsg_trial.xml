@@ -7,17 +7,17 @@
     </trial_index_advertising>
     <trial_index_index>
         <reference name="content">
-            <block type="tsgtrial/news" template="trial/index.phtml" />
+            <block type="tsgtrial/advertising" template="trial/index.phtml" />
         </reference>
     </trial_index_index>
     <trial_index_view>
         <reference name="content">
-            <block type="tsgtrial/view" name="news.content" template="trial/view.phtml" />
+            <block type="tsgtrial/advertising" name="news.content" template="trial/view.phtml" />
         </reference>
     </trial_index_view>
     <catalog_product_view translate="label">
         <reference name="product.info">
-            <block type="catalog/product_view" name="advertising" after="-" template="trial/advertisingForProduct.phtml"/>
+            <block type="tsgtrial/advertising" name="advertising" after="-" template="trial/advertisingForProduct.phtml"/>
         </reference>
     </catalog_product_view>
 </layout>
