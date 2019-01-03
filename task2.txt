@@ -1,0 +1,2 @@
+В модуле Trial создать блок Advertising (реклама). Создать шаблон для блока, где вывести картинку "Здесь могла быть ваша реклама".
+В IndexController создать advertisingAction. Создать handle для advertisingAction, в котором вывести блок Advertising и задать ему созданный шаблон.

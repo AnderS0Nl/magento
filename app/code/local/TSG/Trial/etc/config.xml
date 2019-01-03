@@ -15,11 +15,21 @@
                 </args>
             </trial>
         </routers>
+        <layout>
+            <updates module="trial">
+                <tsg_trial>
+                    <file>tsg_trial.xml</file>
+                </tsg_trial>
+            </updates>
+        </layout>
     </frontend>
     <global>
-
+        <blocks>
+            <tsgtrial>
+                <class>TSG_Trial_Block</class>
+            </tsgtrial>
+        </blocks>
     </global>
-
     <default>
 
     </default>

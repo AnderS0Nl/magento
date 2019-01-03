@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <trial_index_advertising>
+        <reference name="content">
+            <block type="tsgtrial/advertising" name="tsgtrial_advertising" template="trial/advertising.phtml"/>
+        </reference>
+    </trial_index_advertising>
+</layout>
+
