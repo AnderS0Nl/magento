@@ -1,0 +1,2 @@
+Создать модуль Trial. Определить контроллер IndexController и indexAction,
+в котором вывести 'Hello Magento'.
