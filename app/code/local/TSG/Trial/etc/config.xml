@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Tsg_Trial>
+            <version>0.0.1</version>
+        </Tsg_Trial>
+    </modules>
+    <admin>
+        <routers>
+            <tsg_trial_admin>
+                <use>admin</use>
+                <args>
+                    <module>Tsg_Trial</module>
+                    <frontName>tsg_trial_admin</frontName>
+                </args>
+            </tsg_trial_admin>
+        </routers>
+    </admin>
+    <adminhtml>
+        <menu>
+            <tsg_trial module="tsg_trial">
+                <title>News</title>
+                <sort_order>77</sort_order>
+                <action>tsg_trial_admin/adminhtml_news</action>
+            </tsg_trial>
+        </menu>
+    </adminhtml>
+    <frontend>
+        <routers>
+            <trial>
+                <use>standard</use>
+                <args>
+                    <module>Tsg_Trial</module>
+                    <frontName>helloMagento</frontName>
+                </args>
+            </trial>
+        </routers>
+        <layout>
+            <updates module="trial">
+                <tsg_trial>
+                    <file>tsg_trial.xml</file>
+                </tsg_trial>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <tsg_trial>
+                <class>Tsg_Trial_Block</class>
+            </tsg_trial>
+        </blocks>
+        <helpers>
+            <tsg_trial>
+                <class>Tsg_Trial_Helper</class>
+            </tsg_trial>
+        </helpers>
+        <models>
+            <tsg_trial>
+                <class>Tsg_Trial_Model</class>
+                <resourceModel>tsg_trial_resource</resourceModel>
+            </tsg_trial>
+            <tsg_trial_resource>
+                <class>Tsg_Trial_Model_Resource</class>
+                <entities>
+                    <table_news>
+                        <table>news</table>
+                    </table_news>
+                </entities>
+            </tsg_trial_resource>
+        </models>
+        <resources>
+            <tsg_trial_setup>
+                <setup>
+                    <module>Tsg_Trial</module>
+                </setup>
+            </tsg_trial_setup>
+        </resources>
+    </global>
+
+    <default>
+
+    </default>
+</config>
