@@ -25,9 +25,9 @@
     </frontend>
     <global>
         <blocks>
-            <tsgtrial>
+            <tsg_trial>
                 <class>Tsg_Trial_Block</class>
-            </tsgtrial>
+            </tsg_trial>
         </blocks>
     </global>
     <default>
