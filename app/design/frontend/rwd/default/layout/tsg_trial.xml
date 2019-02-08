@@ -2,12 +2,12 @@
 <layout version="1.0.0">
     <trial_index_advertising>
         <reference name="content">
-            <block type="tsgtrial/advertising" name="tsgtrial_advertising" template="trial/advertising.phtml"/>
+            <block type="tsg_trial/advertising" name="tsg_trial_advertising" template="trial/advertising.phtml"/>
         </reference>
     </trial_index_advertising>
     <catalog_product_view translate="label">
         <reference name="product.info">
-            <block type="tsgtrial/advertising" name="advertising" after="-" template="trial/advertisingForProduct.phtml"/>
+            <block type="tsg_trial/advertising" name="advertising" after="-" template="trial/advertisingForProduct.phtml"/>
         </reference>
     </catalog_product_view>
 </layout>
