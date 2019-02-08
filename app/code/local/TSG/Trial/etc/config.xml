@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <modules>
-        <TSG_Trial>
+        <Tsg_Trial>
             <version>0.0.1</version>
-        </TSG_Trial>
+        </Tsg_Trial>
     </modules>
     <frontend>
         <routers>
             <trial>
                 <use>standard</use>
                 <args>
-                    <module>TSG_Trial</module>
+                    <module>Tsg_Trial</module>
                     <frontName>helloMagento</frontName>
                 </args>
             </trial>
